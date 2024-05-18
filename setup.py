@@ -10,3 +10,4 @@ setup(
 )
 
 # pip install requirements.txt
+from setuptools import find_packages,setup
