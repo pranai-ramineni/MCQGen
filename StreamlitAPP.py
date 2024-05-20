@@ -24,7 +24,7 @@ with st.form("user_input"):
 
     button = st.form_submit_button("Create Quiz")
 
-file_path = os.path.join(os.path.dirname(__file__), 'src/response.json')
+file_path = os.path.join(os.path.dirname(__file__), 'src/mcqgenerator/response.json')
 with open(file_path, 'r') as file:
     RESPONSE_JSON = json.load(file)
 
