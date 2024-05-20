@@ -24,7 +24,8 @@ with st.form("user_input"):
 
     button = st.form_submit_button("Create Quiz")
 
-with open("/Users/pranai/Documents/Hustle/MCQGen/src/experiment/response.json", 'r') as file:
+file_path = os.path.join(os.path.dirname(__file__), 'src/experiment/response.json')
+with open(file_path, 'r') as file:
     RESPONSE_JSON = json.load(file)
 
 if button and upload is not None and mcq_count and difficulty:
